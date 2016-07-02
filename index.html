@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta name="theme-color" content="#000">
+		<title>Método canto noroeste</title>
+		<meta name="description" content="Canto noroeste" />
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="shortcut icon" href="assets/img/favicon.png">
+	</head>
+	<body class="body">
+		<header class="header">
+		</header>
+		<section class="conteudo">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title">
+							<h1>Canto Noroeste</h1>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div id="box"></div>
+
+						<div id="row-col">
+							<label for="row" class="hidden">Estoque:</label>
+							<input type="number" id="row" name="row" placeholder="Estoque" />
+							<label for="col" class="hidden">Demanda:</label>
+							<input type="number" id="col" name="col" placeholder="Demanda" />
+							<div id="create-table">
+								<a href="#"><span>Criar tabela</span></a>
+							</div>
+							<div id="calc-noroeste" class="hidden">
+								<a href="#"><span>Calcular</span></a>
+							</div>
+							<div id="exclui-tabela" class="hidden">
+								<a href="#"><span>Excluir tabela</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<span class="info">
+				<strong class="access">i</strong>
+				<strong class="close">x</strong>
+			</span>
+			<div class="desc-info">
+				<h2>Método de transporte Canto Noroeste</h2>
+				<h3>Trabalho prático de Pesquisa Operacional - Sistemas de informação - UniBH</h3>
+				<ul>
+					<li>Desenvolvedor: Davidson Silva - 11424797</li>
+					<li>Professor: Felipe Leandro Andrade</li>
+				</ul>
+				<p>
+					Essa versão do Método Canto Noroeste foi desenvolvida em JavaScript com o auxílio da linguagem de Marcação HTLM5 e os estilos CSS3, visando proporcionar uma melhor experiência para realizar os cálculos necessários e exiir os resultados ao usuário.</p>
+				<p>
+					Nessa versão calculamos o custo para a distribuíção de estoque para diversas demandas. A princípio foi realizado apenas o cálculo para distribuições equilibradas. Foram criados os métodos createTable(rows, cols), onde o usuário define a quantidade de linhas (rows) de estoque e colunas (cols) de demanda, esses valores são inputados em campos especificados na interface dando assim liberdade e dinâmica ao programa.
+					Após criar a tabela o usuário poderá excluí-la quando achar necessário e poderá criar outra com as dimensões que necessita.
+				</p>
+				<p>
+					Após criar a tabela o usuário deverá informar os custos de cada combinação e os valores das demandas e estoques disponíveis. Não será possível calcular caso um dos campos de demanda ou estoque estiverem vazios ou forem iguais a 0 (zero), pois se ambos foram declarados logo têm algum valor.
+				</p>
+				<p>
+					Foi criado também um método que calcula a distribuião do estoque para as demandas cadastradas calcula(rows, cols). O cálculo só é realizado caso a solução seja equilibrada (A normalização não foi implementada nessa versão do programa). Nesse método são realizadas ass equações e comparações necessárias para que a distrribuição seja aplicada a qualquer distribuição equilibrada informada ao programa.
+					Após calcular toda a distribuição o sistema gera a tabela com a combinação encontrada e o custo total de acordo com os custos anteriormente informados pelo usuário.
+				</p>
+
+			</div>
+			<div class="rights">
+				<!-- PHP YEAR
+				<span>Davidson UNIBH - <?php echo date('Y'); ?> </span>
+				-->
+				<span>Davidson UNIBH - 2016 </span>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/wow.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+	</body>
+</html>
